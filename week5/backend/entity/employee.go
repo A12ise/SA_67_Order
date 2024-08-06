@@ -8,21 +8,21 @@ import (
 
 type Employee struct {
 	gorm.Model
-	Employee_id 	string		`json:"employee_id"`
+	Employee_id 	string		
 
-	First_Name 		string		`json:"first_name"`
+	First_Name 		string		
 
-	Last_Name 		string		`json:"last_name"`
+	Last_Name 		string		
 
-	Gender_id 		string		`json:"gender_id"`
+	Gender_id 		string		
 
-	Username 		string		`json:"username"`
+	Username 		string		
 
-	Password 		string		`json:"password"`
+	Password 		string		
 
-	Position_id 	string		`json:"position_id"`
+	Position_id 	string		
 
-	Register_date 	time.Time	`json:"register_date"`
+	Register_date 	time.Time
 
-	Order []Order `gorm:"foreignKey:employee_id"`
+	Order []Order `gorm:"foreignKey:Employee_id"`
 }
