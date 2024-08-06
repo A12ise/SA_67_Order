@@ -2,6 +2,8 @@ module github.com/A12ise/SA_67_Order
 
 go 1.22.5
 
+require gorm.io/gorm v1.25.11
+
 require (
 	github.com/bytedance/sonic v1.12.1 // indirect
 	github.com/bytedance/sonic/loader v0.2.0 // indirect
@@ -34,5 +36,4 @@ require (
 	google.golang.org/protobuf v1.34.2 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 	gorm.io/driver/sqlite v1.5.6 // indirect
-	gorm.io/gorm v1.25.11 // indirect
 )
