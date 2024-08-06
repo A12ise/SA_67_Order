@@ -8,7 +8,7 @@ import (
 
 type Booking struct {
 	gorm.Model
-	Booking_id 			string		`json:"booking_id"`
+	Booking_id 			string
 	Number_of_customers int
 	Date 				time.Time
 	Soup_id_1 			string
@@ -18,5 +18,5 @@ type Booking struct {
 	Member_id 			string
 	Employee_id 		string
 
-	Order []Order `gorm:"foreignKey:booking_id"`
+	Order []Order `gorm:"foreignKey:Booking_id"`
 }
