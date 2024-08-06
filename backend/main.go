@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/A12ise/SA_67_Order/tree/main/week5/backend/entity"
+	"github.com/A12ise/SA_67_Order/entity"
   "gorm.io/gorm"
   "gorm.io/driver/sqlite"
 )
@@ -17,10 +17,10 @@ func main() {
   db.AutoMigrate(
 	&entity.Booking{}, 
 	&entity.Employee{}, 
-	&entity.StatusOrder{}, 
+	&entity.Status_Order{}, 
 	&entity.Order{}, 
 	&entity.Product{}, 
-	&entity.OrderProduct{},
+	&entity.Order_Product{},
 )
 
 }
